@@ -1,3 +1,7 @@
+/*
+Orange color : #e67e22
+*/
+
 /*--------------------*/
 /*BASIC SETUP*/
 /*--------------------*/
@@ -114,13 +118,14 @@ header {
     height: 100px;
     width: auto;
     float: left;
-    margin-left: 200px;
+    margin: 20px 200px;
 }
 
 .main-nav {
     float: right;
     margin-right: 200px;
     list-style: none;
+    margin-top: 55px;
 }
 
 .main-nav li {
@@ -128,9 +133,18 @@ header {
     margin-left: 40px;
 }
 
-.main-nav li a {
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
 }
