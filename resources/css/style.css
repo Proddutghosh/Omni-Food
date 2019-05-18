@@ -1,9 +1,9 @@
 /*
-Orange color : #e67e22
+* Orange color : #e67e22
 */
 
 /*--------------------*/
-/*BASIC SETUP*/
+/* BASIC SETUP */
 /*--------------------*/
 
 * {
@@ -33,7 +33,7 @@ html {
 }
 
 /*--------------------*/
-/*REUSABLE COMPONENTS*/
+/* REUSABLE COMPONENTS */
 /*--------------------*/
 
 .row {
@@ -112,6 +112,37 @@ h2:after {
   margin-bottom: 10px;
 }
 
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /* secrets to align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+/* ---- LINKS ----*/
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
 /* ---- BUTTONS ----*/
 
 .btn:link,
@@ -155,7 +186,7 @@ h2:after {
 }
 
 /*--------------------*/
-/*HEADER*/
+/* HEADER */
 /*--------------------*/
 
 header {
@@ -210,7 +241,7 @@ header {
 }
 
 /*--------------------*/
-/* FEATURES*/
+/* FEATURES */
 /*--------------------*/
 
 .section-features .long-copy {
@@ -218,7 +249,7 @@ header {
 }
 
 /*--------------------*/
-/* MEALS*/
+/* MEALS */
 /*--------------------*/
 
 .section-meals {
@@ -257,7 +288,7 @@ header {
 }
 
 /*--------------------*/
-/* HOW IT WORKS*/
+/* HOW IT WORKS */
 /*--------------------*/
 
 .section-steps {
@@ -301,8 +332,29 @@ header {
   margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
 }
+
+/*--------------------*/
+/*  CITIES */
+/*--------------------*/
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;    
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+
